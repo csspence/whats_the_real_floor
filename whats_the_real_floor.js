@@ -14,5 +14,12 @@ getRealFloor(15) == 13
 getRealFloor(-3) == -3
 */
 
-function getRealFloor(n) {
+const getRealFloor = (n) => {
+  if(n <= 0) {
+    return n;
+  } else if (n > 0 && n < 14) {
+    return n - 1;
+  } else {
+    return n - 2;
+  }
 }
